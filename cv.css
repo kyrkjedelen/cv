@@ -1,0 +1,89 @@
+body {
+    margin: 0 auto;
+    width: 75rem;
+}
+button {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: medium;
+}
+button:hover, button:focus {
+    background-color: rgb(121, 121, 121);
+    color: white;
+}
+a.no-default {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    width: 100%;
+    border-radius: 150px;
+    border: 2px solid black;
+}
+hgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+hgroup * {
+    margin: 0;
+}
+hgroup > i {
+    text-align: right;
+    flex: 1;
+}
+hgroup > div {
+    flex: 3;
+}
+h4 {
+    font-size: large;
+}
+h3 {
+    font-size: x-large;
+    text-align: center;
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-size: xxx-large;
+}
+h2 {
+    font-size: xx-large;
+}
+section {
+    margin: 2rem 0;
+}
+section.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+section.horizontal > * {
+    margin: 0 2rem;
+    flex: 1 1 0px;
+}
+p.center {
+    text-align: center;
+}
+ul.no-dots {
+    list-style-type: none;
+}
+
+@media (max-width: 75rem) {
+    body {
+        width: 100vw;
+    }
+    button {
+        display: block;
+        position: static;
+        margin: 2rem auto;
+    }
+}
+@media (max-width: 65rem) {
+    section.horizontal {
+        display: block;
+    }
+
+}
